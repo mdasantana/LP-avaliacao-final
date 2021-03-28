@@ -2,7 +2,7 @@
 
 ALUNO: MATHEUS DOS ANJOS SANTANA
 TURMA: DESENVOLVIMETO DE SISTEMAS - NOTURNO
-QUESTÃO: 1ª QUESTÃO
+QUESTÃƒO: 1Âª QUESTÃƒO
 
 *******************************************************************************/
 
@@ -12,7 +12,7 @@ QUESTÃO: 1ª QUESTÃO
 int preencher(int *valor){
     int i;
     for(i=0;i<20;i++){
-        printf("Digite o %dº valor: ", i+1);
+        printf("Digite o %dÂº valor: ", i+1);
         scanf("%d", &valor[i]);
     }
 }
@@ -43,9 +43,9 @@ int parImpar(int *valor){
     int i;
     for(i=0;i<20;i++){
         if((valor[i]%2)!=0){
-            printf("O valor %d é ímpar \n", valor[i]);
+            printf("O valor %d Ã© Ã­mpar \n", valor[i]);
         }else{
-            printf("O valor %d é par \n", valor[i]);
+            printf("O valor %d Ã© par \n", valor[i]);
         }
     }
 }
@@ -66,11 +66,11 @@ int main()
     int numeros[20], i, numeroMain;
     preencher(numeros);
     printf("\n");
-    printf("A quantidade de números acima de dez são: %d \n", acimaDez(numeros));
-    printf("O menor valor do vetor é: %d \n", menor(numeros));
+    printf("A quantidade de nÃºmeros acima de dez sÃ£o: %d \n", acimaDez(numeros));
+    printf("O menor valor do vetor Ã©: %d \n", menor(numeros));
     parImpar(numeros);
-    printf("Digite um número inteiro: ");
+    printf("Digite um nÃºmero inteiro: ");
     scanf("%d", &numeroMain);
-    printf("A quantidade de números acima de %d é: %d \n\n", numeroMain, vindoDoMain(numeroMain, numeros));
+    printf("A quantidade de nÃºmeros acima de %d Ã©: %d \n\n", numeroMain, vindoDoMain(numeroMain, numeros));
     return 0;
 }
